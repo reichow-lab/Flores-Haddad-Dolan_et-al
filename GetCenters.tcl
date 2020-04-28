@@ -1,3 +1,7 @@
+# In order to identify the (x,y) coordinates of the lipid densities found in CryoEM & MD (used in lipid-classification), place
+# a water molecule in the center of each of the 19 densities, in all 12 sites. This program is required for LipNetwork.tcl
+# by providing the (x,y) coordinates of lipid densities used in our classification.
+
 puts			"Press '1' and select the waters that you used for selecting lipid centers..."
 puts			"Once all of your waters have been selected, start the script by typing, 'run <output name>'"
 
