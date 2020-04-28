@@ -1,4 +1,12 @@
 #!/home/bassamh/miniconda2/envs/PY3/bin/python
+#
+# This python script ensures that the centers of lipid-densities are chosen precisely. Due to the 12 fold symmetry of the system
+# there are 12 (symmetric) regions of the gap junction where lipid-densities were found in the CryoEM data. Each of the 12 sites 
+# have 19 lipid densities, numbered 1-19...i.e. there are 12 x "1", 12 x "2", etc. To ensure that the centeres selected for densi-
+# ies "1"-"19" in all 12 sites have the same geometries, this script calculates the total pair-wise distances within the 19 centers
+# to make sure that they are equivalent in shape.
+#
+# Please refere any questions to Bassam Haddad (bhaddad@pdx.edu), or have Steve Reichow (reichow@pdx.edu) forward the question to Bassam.
 
 from sys import argv
 from math import sqrt
