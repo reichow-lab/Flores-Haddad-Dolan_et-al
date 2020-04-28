@@ -1,5 +1,7 @@
 #!/home/bassamh/miniconda2/envs/PY3/bin/python
 #
+# This script verifies the output of GetCenters.tcl
+#
 # This python script ensures that the centers of lipid-densities are chosen precisely. Due to the 12 fold symmetry of the system
 # there are 12 (symmetric) regions of the gap junction where lipid-densities were found in the CryoEM data. Each of the 12 sites 
 # have 19 lipid densities, numbered 1-19...i.e. there are 12 x "1", 12 x "2", etc. To ensure that the centeres selected for densi-
