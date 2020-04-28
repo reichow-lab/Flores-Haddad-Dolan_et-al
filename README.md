@@ -4,7 +4,7 @@ This repository contains all of the scripts used in the data acquisition and anl
 
 All of the Scripts in this repository were developed by Bassam Haddad with the exception of:
   
-  math.tcl
-  matrix.tcl
+  - math.tcl
+  - matrix.tcl
   
-  As these are standard TCL libraries that were downloaded to be used in LipNetwork.tcl
+As these are standard TCL libraries that were downloaded to be used in LipNetwork.tcl
