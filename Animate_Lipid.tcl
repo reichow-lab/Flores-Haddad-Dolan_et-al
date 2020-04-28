@@ -1,3 +1,6 @@
+# This is a module of LipNetwork.tcl, and is used to visualize lipid-frames only from lipids that were classified as being
+# within a density.
+
 proc lipid_animator {LipList molid} {
 
 	set numframes [molinfo $molid get numframes]
