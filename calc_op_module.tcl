@@ -1,3 +1,14 @@
+# This is a set of scripts for finding the lipid order parameter from
+# coordinate data.  The lipid order parameter is defined as
+#     S_CD = < 3/2 cos^2 w - 1/2 >
+# where w is the angle made by the bond between an aliphatic carbon
+# and a hydrogen. 
+
+# Author: Justin Gullingsrud
+# Email:  justinrocks@gmail.com
+
+
+# Find order param for the c3 tail.
 proc orderparam-c3 { result { seltext "all" } } {
   upvar $result arr
   set n [molinfo top get numframes]
