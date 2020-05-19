@@ -1,4 +1,17 @@
-puts "type the following to run program: 'run outfile_name'"
+# Program:	LipNetwork.tcl
+# Author:	Bassam Haddad
+# 
+# Portland State University
+# Reichow Lab
+#
+#	This program calculates the RMSD of a protein selection (e.g. backbone) over a trajectory. There is an auto
+#	
+#	Procs:
+#		align - aligns the protein backbone
+#		inputs: reference molID, selection molID (they can be the same)
+
+puts "`align <rmolid> <smolid>`\n"
+puts "
 
 proc align {rmolid smolid} {
 
@@ -34,7 +47,7 @@ proc align {rmolid smolid} {
         }
 
 }
-proc run {ofile resi resf} {
+proc run {ofile} {
 
 	set initframe 0
 
@@ -69,8 +82,8 @@ proc	 autormsd    {in} {
 
          close   $infile
 
-         ## The input file will contain the CryoEM .psf/.pdb, .psf/.dcd, OUT, ResI, ResF
-         ##                                            0          1       2    3     4      
+         ## The input file will contain the CryoEM .psf/.pdb, .psf/.dcd, OUT 
+         ##                                            0          1       2       
          set     m       0
 
          foreach line    $inputs {
@@ -85,7 +98,7 @@ proc	 autormsd    {in} {
 
                  align   $m [expr $m + 1]
 
-                 run     [lindex $line 2] [lindex $line 3] [lindex $line 4]
+                 run     [lindex $line 2]
 
                 # mol     delete  $m
                 # mol     delete  [expr $m + 1]
