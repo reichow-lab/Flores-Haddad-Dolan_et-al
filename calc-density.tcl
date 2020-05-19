@@ -1,10 +1,33 @@
+# Program:	calc-density.tcl
+# Author:	Bassam Haddad
+# 
+# Portland State University
+# Reichow Lab
+#
+#	This program calculates the density of molecules (e.g. lipids, protein, etc.) and ions. The density is calculated using
+#	VMDs volmap plugin. This program is used to generate all density files used for comparison against CryoEM densities.
+#	A voxel size of 0.649 is used here, as it is the pixel size used in the CryoEM camera, and provides the resolution limit
+#	for this dataset.
+#
+#	To run the following procs, just load the trajectory file of interest, align it (use auto_rmsd.tcl for alignment) 
+#	type the following proc() and the name of the output files. Alternatively, you can use the autodensity function where
+#	you (ad-hoc) change which density calculation you want by modifying the autodensity() proc. This takes a .txt file that
+#	contains paths to all the inputs and outputs.
+#	
+#	Procs:
+#		iondensity 	{ofile}
+#		popcdensity 	{ofile}
+#		dmpcdensity 	{ofile}
+#		proteindensity 	{ofile}
+#		autodensity	{infile}
+
 source	~/Scripts/TCL/Tcl-Scripts/auto-ionz-IN.tcl
 set	PO_tail_text "lipid and (name C22 to C29 C210 to C218 C32 to C39 C310 to C316)"
 set	DM_tail_text "lipid and (name C22 to C29 C210 to C214 C32 to C39 C310 to C314)"
 set     PC_head_text "lipid and (name O21 O22 O31 O32 O11 to O14 C1 C2 C21 C3 C31 C11 to C15 P N)"
 set	prot_text    "protein and noh" 
 
-puts	"To run this program type ~ iondensity <ofile> ~ or ~ popcdensity <ofile> ~ or ~ dmpcdensity <ofile>."
+puts	"To run this program type ~ iondensity <ofile> ~ or ~ popcdensity <ofile> ~ or ~ dmpcdensity <ofile>. ~ or ~ autodensity <in>"
 
 proc iondensity {ofile} {
 
