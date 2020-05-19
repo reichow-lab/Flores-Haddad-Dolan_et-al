@@ -1,3 +1,15 @@
+# Program:	Lip-Analysis-Tools.tcl
+# Author:	Bassam Haddad
+# 
+# Portland State University
+# Reichow Lab
+#
+# 	This program is an essential component of LipNetwork.tcl, which analyzes the arrangement of lipids around the extra-
+#	cellular leaflet of Cx46/50 gap junctions. Lip-Analysis-Tools.tcl was originally a set of vmd tools to look at lipids
+#	around a gap junction, and now is essential for LipNetwork to properly function.
+#
+#	This program does not need to be sourced individually, as it is sourced by LipNetwork.tcl.
+
 source	~/Scripts/TCL/Tcl-Scripts/calc_op_module.tcl
 source	~/Scripts/TCL/Tcl-Scripts/calc_op.tcl
 
