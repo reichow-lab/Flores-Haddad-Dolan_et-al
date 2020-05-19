@@ -179,6 +179,10 @@ proc get_lipid_list	{} {
 
 proc lip_analysis	{difsel} {
 
+	# This is the primary process in this program, it loops through all of the selected lipids from get_lipid_list()
+	# and evaluates, at every frame, whether or not they occupy a lipid density and if so which densities. This process 
+	# generates a lipid list (LipList) which can be used by other programs (Animate_Lipid.tcl).
+	
 	global Phosp_Ind NumFrames IsoLow LipList
 
 	if {!$difsel} { 
@@ -247,6 +251,8 @@ proc lip_analysis	{difsel} {
 }
 
 proc which_center	{lipid_tail} {
+
+	# This process evaluates which lipid density this lipid is closest to on average.
 
 	global LipDict
 	
@@ -332,6 +338,9 @@ proc eval_density	{lipid_tail lip_center} {
 }
 
 proc pop_matrix		{den_id_1 den_id_2 {writematrix false} {outfile false}} {
+
+	# This process generates a matrix of lipid-occupations, and can be analyzed to see which densities are most commonly 
+	# populated (e.g. densities '1-2')
 
 	global LipMat LipArr DenNum
 
