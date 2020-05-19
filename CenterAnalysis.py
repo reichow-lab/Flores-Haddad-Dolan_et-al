@@ -16,6 +16,8 @@ import statistics as stat
 
 script, CentersFile, LipNum = argv
 
+# CentersFile is going to be the output of GetCenters.tcl
+
 # Generate Dictionary containing all of the x,y data for each lipid, this dictionary will be used to calculate all 66 pairwise distances
 
 Chains  =   ['A','B','C','D','E','F','G','H','I','J','K','L']
