@@ -1,3 +1,9 @@
+# Program:	Animate_Lipid.tcl
+# Author:	Bassam Haddad
+# 
+# Portland State University
+# Reichow Lab
+#
 # This is a module of LipNetwork.tcl, and is used to visualize lipid-frames only from lipids that were classified as being
 # within a density. It takes a list of lipids (of interest) as an input. LipList is a list full of specific lipid's attributes,
 # created during the lip_analysis() proc of LipNetwork.tcl. 
