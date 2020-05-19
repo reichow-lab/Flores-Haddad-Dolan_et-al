@@ -1,4 +1,8 @@
-#!/home/bassamh/miniconda2/envs/PY3/bin/python
+# Program:	CenterAnalysis.py
+# Author:	Bassam Haddad
+# 
+# Portland State University
+# Reichow Lab
 #
 # This script verifies the output of GetCenters.tcl
 #
