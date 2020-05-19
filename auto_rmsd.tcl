@@ -7,8 +7,12 @@
 #	This program calculates the RMSD of a protein selection (e.g. backbone) over a trajectory. There is an auto
 #	
 #	Procs:
-#		align - aligns the protein backbone
+#		align		- aligns the protein backbone
 #		inputs: reference molID, selection molID (they can be the same)
+#		run		- calculates rmsd for each frame with respect to the reference model.
+#		inputs:	output-name (use autormsd)
+#		autormsd	- This takes an input .txt file with paths to all of the inputs separated by space or tab. 
+#				  This way you can set and forget the rmsd calculations, and ensure they are done the same way.
 
 puts "`align <rmolid> <smolid>`\n"
 puts "
