@@ -9,4 +9,4 @@ All of the Scripts in this repository were developed by Bassam Haddad with the e
   
 As these are standard TCL libraries that were downloaded to be used in LipNetwork.tcl
 
-![General Workflow for processing RMSD/RMSF, and lipid transition analysis.](https://github.com/reichow-lab/Flores-Haddad-Dolan_et-al/blob/master/MD_Analysis_Workflow.pdf)
+![General Workflow for processing RMSD/RMSF, and lipid transition analysis.](https://github.com/reichow-lab/Flores-Haddad-Dolan_et-al/blob/master/Slide1.png)
