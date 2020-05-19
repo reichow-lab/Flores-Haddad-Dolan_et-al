@@ -1,4 +1,4 @@
-# Program:	LipNetwork.tcl
+# Program:	auto_rmsd.tcl
 # Author:	Bassam Haddad
 # 
 # Portland State University
